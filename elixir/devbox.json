@@ -9,10 +9,7 @@
   "shell": {
     "init_hook": ["mkdir -p \"${HEX_HOME}\"", "mkdir -p \"${MIX_HOME}\""],
     "scripts": {
-      "setup": [
-        "mix local.hex --force",
-        "mix archive.install hex phx_new --force"
-      ]
+      "setup": ["mix local.hex --force"]
     }
   }
 }
