@@ -1,0 +1,16 @@
+{
+  "metadata": {
+    "name": "elixir",
+    "description": "Devbox wrapper for simple elixir apps using mix (and hex) to manage packages and build scripts.",
+    "maintainer": "Richard Smith <richard.smith@clarity-ltd.co.uk>",
+    "prerequisites": ["devbox"]
+  },
+  "preinstall": [],
+  "postinstall": ["devbox run setup"],
+  "symlinks": {
+    "ignore": ["README.md"]
+  },
+  "git": {
+    "exclude": [".devenv/"]
+  }
+}
